@@ -1,0 +1,23 @@
+---
+import "../styles/global.css"
+import Footer from "../components/Footer.astro"
+import Navbar from "../components/Navbar.astro"
+import Hero from "../components/Hero.astro"
+---
+
+<html lang="it">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Maregeo</title>
+    </head>
+    <body>
+        <Hero />
+        <Navbar />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>
