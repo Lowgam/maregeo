@@ -1,7 +1,37 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro"
+import HomeCard from "../components/HomeCard.astro"
+import "../styles/home-card.css";
 ---
 
 <BaseLayout>
-    <h1>Home Maregeo</h1>
+    <section class="home-grid">
+        <HomeCard
+            title="Chi siamo"
+            text=""
+            image="/images/section-home-images/sh_1.jpg"
+            href="/chi-siamo"
+        />
+
+        <HomeCard
+            title="Dove trovarci"
+            text=""
+            image="/images/section-home-images/sh_2.jpg"
+            href="/dove-trovarci"
+        />
+
+        <HomeCard
+            title="Contattaci"
+            text=""
+            image="/images/section-home-images/sh_3.jpg"
+            href="/contattaci"
+        />
+
+        <HomeCard
+            title="Galleria"
+            text=""
+            image="/images/section-home-images/sh_4.jpg"
+            href="/galleria"
+        />
+    </section>
 </BaseLayout>

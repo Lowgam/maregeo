@@ -1,7 +1,14 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     color: #1f1f1f;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 .hero {
@@ -48,6 +55,10 @@ body {
     z-index: 2;
 }
 
+.hero__logo a {
+    display: block;
+    line-height: 0;
+}
 
 .hero__logo img {
     width: clamp(280px, 32vw, 480px);

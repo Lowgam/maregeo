@@ -1,38 +1,51 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+---
+
 <section class="hero">
     <div class="hero__slides">
         <img
             class="hero__image"
-            src="/images/hero/Hero_1.jpg"
+            src={`${base}images/hero/Hero_0.jpg`}
             alt="Prodotti Maregeo"
         />
 
         <img
             class="hero__image"
-            src="/images/hero/Hero_2.jpg"
+            src={`${base}images/hero/Hero_1.jpg`}
             alt="Prodotti Maregeo"
         />
 
         <img
             class="hero__image"
-            src="/images/hero/Hero_3.jpg"
+            src={`${base}images/hero/Hero_2.jpg`}
             alt="Prodotti Maregeo"
         />
 
         <img
             class="hero__image"
-            src="/images/hero/Hero_4.jpg"
+            src={`${base}images/hero/Hero_3.jpg`}
             alt="Prodotti Maregeo"
         />
 
         <img
             class="hero__image"
-            src="/images/hero/Hero_5.jpg"
+            src={`${base}images/hero/Hero_4.jpg`}
             alt="Prodotti Maregeo"
         />
 
         <img
             class="hero__image"
-            src="/images/hero/Hero_1.jpg"
+            src={`${base}images/hero/Hero_5.jpg`}
+            alt="Prodotti Maregeo"
+        />
+
+        <!-- Copia della prima immagine per il loop infinito -->
+        <img
+            class="hero__image"
+            src={`${base}images/hero/Hero_0.jpg`}
             alt="Prodotti Maregeo"
         />
     </div>
@@ -40,13 +53,13 @@
     <div class="hero__fade"></div>
 
     <div class="hero__logo">
-    <a href="/">
-        <img
-            src="/images/logo/maregeo-logo.png"
-            alt="Logo Maregeo"
-        />
-    </a>
-</div>
+        <a href={base}>
+            <img
+                src={`${base}images/logo/maregeo-logo.png`}
+                alt="Logo Maregeo"
+            />
+        </a>
+    </div>
 </section>
 
 <script>

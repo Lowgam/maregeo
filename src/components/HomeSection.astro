@@ -1,0 +1,26 @@
+---
+const {
+    title,
+    text,
+    image,
+    href,
+    imagePosition = "right"
+} = Astro.props;
+---
+
+<a href={href} class="home-section-link">
+    <section class={`home-section home-section--${imagePosition}`}>
+        <div class="home-section__content">
+            <div class="home-section__text">
+                <h2>{title}</h2>
+                <p>{text}</p>
+            </div>
+
+            <img
+                class="home-section__image"
+                src={image}
+                alt={title}
+            />
+        </div>
+    </section>
+</a>

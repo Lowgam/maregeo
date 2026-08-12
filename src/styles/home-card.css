@@ -1,0 +1,60 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2.5rem;
+}
+
+.home-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-card__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.home-card__content {
+    padding: 0.5rem 0 0;
+    text-align: center;
+}
+
+.home-card__content h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.home-card__content p {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.home-card__image {
+    transition: transform 0.25s ease;
+}
+
+.home-card:hover .home-card__image {
+    transform: scale(1.02);
+}
+
+@media (max-width: 700px) {
+    .home-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .home-card__content h2 {
+        font-size: 0.95rem;
+    }
+}
